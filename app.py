@@ -1,6 +1,11 @@
 import telebot
+import configparser
 
-bot = telebot.TeleBot("")
+config = configparser.ConfigParser()
+config.read("settings.ini")
+telegram_token = config['Telegram']['TOKEN']
+
+bot = telebot.TeleBot(telegram_token)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
