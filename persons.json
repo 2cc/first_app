@@ -1,0 +1,102 @@
+[
+	{
+		"id": 0,
+		"name": "Элизабет Тэйлор",
+		"gender": false
+	},
+	{
+		"id": 1,
+		"name": "Одри Хепбёрн",
+		"gender": false
+	},
+	{
+		"id": 2,
+		"name": "Скарлетт Йоханссон",
+		"gender": false
+	},
+	{
+		"id": 3,
+		"name": "Мэрилин Монро",
+		"gender": false
+	},
+	{
+		"id": 4,
+		"name": "Кэйт Бекинсэйл",
+		"gender": false
+	},
+	{
+		"id": 5,
+		"name": "Моника Беллуччи",
+		"gender": false
+	},
+	{
+		"id": 6,
+		"name": "Грейс Келли",
+		"gender": false
+	},
+	{
+		"id": 7,
+		"name": "Анджелина Джоли",
+		"gender": false
+	},
+	{
+		"id": 8,
+		"name": "Мишель Пфайффер",
+		"gender": false
+	},
+	{
+		"id": 9,
+		"name": "Кэтрин Зета-Джонс",
+		"gender": false
+	},
+	{
+		"id": 10,
+		"name": "Том Хэнкс",
+		"gender": true
+	},
+	{
+		"id": 11,
+		"name": "Джонни Депп",
+		"gender": true
+	},
+	{
+		"id": 12,
+		"name": "Джек Николсон",
+		"gender": true
+	},
+	{
+		"id": 13,
+		"name": "Роберт Де Ниро",
+		"gender": true
+	},
+	{
+		"id": 14,
+		"name": "Леонардо Ди Каприо",
+		"gender": true
+	},
+	{
+		"id": 15,
+		"name": "Аль Пачино",
+		"gender": true
+	},
+	{
+		"id": 16,
+		"name": "Марлон Брандо",
+		"gender": true
+	},
+	{
+		"id": 17,
+		"name": "Морган Фримен",
+		"gender": true
+	},
+	{
+		"id": 18,
+		"name": "Дэниел Дэй-Льюис",
+		"gender": true
+	},
+	{
+		"id": 19,
+		"name": "Уилл Смит",
+		"gender": true
+	}
+]
