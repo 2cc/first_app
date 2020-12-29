@@ -1,12 +1,10 @@
 import telebot
 from telebot import types
-import configparser
 import json
 import random
+import config
 
-config = configparser.ConfigParser()
-config.read("settings.ini")
-telegram_token = config['Telegram']['TOKEN']
+telegram_token = config.TOKEN
 
 bot = telebot.TeleBot(telegram_token)
 
@@ -64,7 +62,7 @@ def check_answer(message, person):
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    welcome_text = config['Telegram']['WELCOME_MESSAGE']
+    welcome_text = config.WELCOME_MESSAGE
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(types.KeyboardButton('Го!'))
     with open('images/welcome_image.png', 'rb') as photo:

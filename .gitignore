@@ -1,3 +1,5 @@
+__pycache__/
 /vv
 settings.ini
+config.py
 /images/prod_welcome_image.png
