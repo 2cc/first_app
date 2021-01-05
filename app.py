@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import json
 import random
-import demo_config as config
+import resources.demo_config as config
 
 
 token = config.TOKEN

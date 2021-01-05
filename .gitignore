@@ -1,7 +1,7 @@
 __pycache__/
 vv/
-demo_config.py
-prod_config.py
-prod_images/
-prod_photos/
-prod_persons.json
+resources/demo_config.py
+resources/prod_config.py
+resources/prod_images/
+resources/prod_photos/
+resources/prod_persons.json
