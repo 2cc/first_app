@@ -5,3 +5,4 @@ resources/prod_config.py
 resources/prod_images/
 resources/prod_photos/
 resources/prod_persons.json
+resources/prod_answers.csv

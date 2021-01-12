@@ -3,6 +3,7 @@ from telebot import types
 import json
 import random
 import resources.demo_config as config
+import csv
 
 
 token = config.TOKEN
@@ -10,6 +11,7 @@ welcome_text = config.WELCOME_TEXT
 images_folder = config.IMAGES_FOLDER
 photos_folder = config.PHOTOS_FOLDER
 persons_list = config.PERSONS_LIST
+answers_file = config.ANSWERS_FILE
 
 bot = telebot.TeleBot(token)
 
@@ -62,7 +64,14 @@ def check_answer(message, person):
     else:
         answer_msg = bot.send_message(
             message.chat.id, u'\U0000274C' + ' Ошибка!')
+    write_answer_to_csv(message.from_user.id, person['name'], message.text)
     send_question(message)
+
+
+def write_answer_to_csv(user_id, question, answer):
+    with open(f'{answers_file}.csv', 'a') as f:
+        csv_writer = csv.writer(f, delimiter=',')
+        csv_writer.writerow([user_id, question, answer])
 
 
 @bot.message_handler(commands=['start'])
